@@ -1,0 +1,42 @@
+:root{
+    /* colors */
+    --primary-clr-orange: #F7A100;
+    --primary-clr-white: #FFFFFF;
+    --primary-clr-blue: #5FC5F8;
+    --primary-clr-black: #030304;
+    --secundary-clr-brown: #53241B;
+    --shades-clr-gray1: #EDEDED;
+    --shades-clr-gray2: #CCCCCC;
+}
+body{
+    margin:0;
+    padding: 0;
+}
+nav{
+    background-color: var(--primary-clr-orange);
+}
+.intro{
+    background-color: var(--primary-clr-blue);
+    border-bottom: solid .5em #F7A100;
+    height: 30em;
+}
+.icon-container{
+    background-color: var(--primary-clr-orange);
+    border-style: none;
+    border-radius: 50%;
+    height: 7em;
+    width: 7em;
+   position: relative;
+   left: 46%;
+   top: 2em
+}
+#lijsten-icon{
+    width: 5em;
+    height: 5em;
+}
+h1{
+    text-align: center;
+    position:relative;
+    top: 1.3em;
+
+}
