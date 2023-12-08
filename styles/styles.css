@@ -61,22 +61,19 @@ nav{
 
 .showFormButton {
     background-color: var(--secundary-clr-brown);
-    padding: 0.5em 2em;
+    padding: 1em 4em;
     margin-bottom: .5em;
     border-radius: 2em;
     cursor: pointer;
     display: inline-block;
-}
-h2{
     color: white;
-}
-.showFormButton:hover{
-    background-color: var(--primary-clr-orange);
-}
-h2:hover{
-    color: var(--primary-clr-black);
+    font-size: 16px;
 }
 
+.showFormButton:hover{
+    background-color: var(--primary-clr-orange);
+    color: var(--primary-clr-black);
+}
 
 .listform{
     background-color: #f0f0f0;
