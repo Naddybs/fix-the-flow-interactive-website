@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="nl">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -34,18 +34,17 @@
         
         <button type="button" class="showFormButton"><h2>Maak lijst aan +</h2></button>
         <form class="listForm" id="listForm">
-            <input type="text" id="listName">
+            <input type="text" aria-label="Naam van de lijst" id="listName">
         </form>
     </section>
-    <!-- main section -->
-    <section></section>
-    <!-- footer section -->
-    <section></section>
     <script>
+         // Stap 1: Selecteer de knop en het formulier met behulp van QuerySelectors
         const showFormButton = document.querySelector('.showFormButton');
         const listForm = document.querySelector('.listForm');
-
+        // Stap 2: Voeg een event listener toe aan de knop voor het 'click'-evenement
         showFormButton.addEventListener('click', function(){
+        // Stap 3: Voer de functie uit wanneer de knop wordt geklikt
+        // Deze functie schakelt de klasse 'hidden' van het formulier in en uit
             listForm.classList.toggle('hidden');
         });
 

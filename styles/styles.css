@@ -85,13 +85,16 @@ h2:hover{
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     display: none;
 }
-#listname{
-    width: 100%;
+#listName{
+    width: 200px;
+    height: 20px;
+    font-size: 16px;
     padding: 10px;
     margin-bottom: 10px;
     border: 1px solid #ccc;
     border-radius: 5px;  
 }
+
 .hidden{
     display: none;
 }
