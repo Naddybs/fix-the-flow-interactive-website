@@ -1,3 +1,8 @@
+@font-face {
+    font-family: 'proxima-nova';
+    src: url('/assets/fonts/ProximaNova-Regular.otf') format('opentype');
+}
+
 :root{
     /* colors */
     --primary-clr-orange: #F7A100;
@@ -7,6 +12,12 @@
     --secundary-clr-brown: #53241B;
     --shades-clr-gray1: #EDEDED;
     --shades-clr-gray2: #CCCCCC;
+
+    --font: 'proxima-nova', sans-serif;
+}
+
+html {
+    font-family: var(--font);
 }
 body{
     margin:0; padding: 0;
