@@ -10,14 +10,16 @@
     <!-- nav section -->
     <header>
         <nav>
-            <ul>
-                <li></li>
-                <li></li>
-                <li></li>
-
-                <li></li>
-                <li></li>
-                <li></li>
+            <img id="logo-img" src="/assets/02-funda-Blue.svg" alt="funda-logo">
+            <ul class="navlist-left">
+                <li>Kopen</li>
+                <li>Huren</li>
+                <li>Verkopen</li>
+            </uL>
+            <ul class="navlist-right">
+                <li>Mijn Lijsten</li>
+                <li>Mijn huis</li>
+                <li>Mijn profiel</li>
             </uL>
         </nav>
      </header>
@@ -29,11 +31,26 @@
             <img id="lijsten-icon" src="assets/lijsten-icon.png" alt="lijsten-icon">
         </div>
         <h1>Mijn lijsten</h1>
+        
+        <button type="button" class="showFormButton"><h2>Maak lijst aan +</h2></button>
+        <form class="listForm" id="listForm">
+            <input type="text" id="listName">
+        </form>
     </section>
     <!-- main section -->
     <section></section>
     <!-- footer section -->
     <section></section>
+    <script>
+        const showFormButton = document.querySelector('.showFormButton');
+        const listForm = document.querySelector('.listForm');
+
+        showFormButton.addEventListener('click', function(){
+            listForm.classList.toggle('hidden');
+        });
+
+    </script> 
+ 
     
 </body>
 </html>
