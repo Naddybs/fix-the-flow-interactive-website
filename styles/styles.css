@@ -48,22 +48,28 @@ nav{
 
 /* intro section header */
 .intro{
-    /* background-color: var(--primary-clr-blue); */
+    background-color: var(--primary-clr-blue);  
     border-bottom: solid .5em #F7A100;
     height: 30em;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    /* background-image: url(/assets/layered-waves-haikei.png);
+    background-size: contain;
+    background-repeat: no-repeat; */
+
+   
+    
 }
 .icon-container{
     background-color: var(--primary-clr-orange);
     border-style: none;
     border-radius: 50%;
-    height: 20em; width: 7em;
+    height: 7em; width: 7em;
     box-shadow: 10px 5px 10px inset var(--primary-clr-black);
     position: relative;
-    bottom: 40%;
+    /* bottom: 40%; */
 }
 #lijsten-icon{
     width: 5em;
@@ -77,11 +83,14 @@ nav{
     background-color: var(--secundary-clr-brown);
     padding: 1em 4em;
     margin-bottom: .5em;
-    border-radius: 2em;
+    border-radius: .5em;
     cursor: pointer;
     display: inline-block;
     color: white;
-    font-size: 16px;
+    /* font-size: 16px; */
+    font-family: Trebuchet MS;
+    font-size: 18px;
+    font-weight: 800;
 }
 
 .showFormButton:hover{
@@ -97,14 +106,14 @@ nav{
     display: none;
 }
 #listName{
+    position: relative;
+    bottom: .2em;
     width: 200px;
     height: 20px;
     font-size: 16px;
     padding: 10px;
-    margin-bottom: 10px;
-    margin-left: 3.6em;
     border: 1px solid #ccc;
-    border-radius: 8px;  
+    /* border-radius: 8px;   */
     box-shadow: -3px 6px 4px #222;
 }
 
@@ -112,7 +121,7 @@ nav{
     display: none;
 }
 /* button naast form */
-a.my-button{
+a.list-button{
     background: linear-gradient(to right,#53241b ,hsl(9, 82%, 17%));
     background-color: #53241b;
     color: #fff;
@@ -122,53 +131,53 @@ a.my-button{
     font-style: normal;
     text-decoration: none;
     padding: 8px 23px;
+    margin: .5em;
     border: 0px solid #000;
     border-radius: 3px;
     display: inline-block;
     box-shadow: inset -6px -5px 10px -3px rgba(12.5445556640625,12.385515953557178,12.385515953557178,0.5);
     text-shadow: 2px 2px 0px #000;
    }
-   a.my-button:hover{
+   a.list-button:hover{
     background: linear-gradient(to right,hwb(22 22% 12%) , var(--primary-clr-orange));
    }
-   a.my-button:active{
+   a.list-button:active{
     transform: scale(0.95);
    }
 
-   /* test */
-   .wave-container {
-    position: relative;
-    width: 100%;
-    height: 100dvh;
-    z-index: -1;
-    background: var(--primary-clr-blue);
-    overflow: hidden;
-  }
-  
-  .wave-container .air {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 70px;
-    background: url(https://1.bp.blogspot.com/-xQUc-TovqDk/XdxogmMqIRI/AAAAAAAACvI/AizpnE509UMGBcTiLJ58BC6iViPYGYQfQCLcBGAsYHQ/s1600/wave.png);
-    background-size: 1000px 100px;
-  }
-  
-  .air {
-    opacity: 0.7;
-    animation: wave 5s linear infinite;
-  }
-  
-  .air1 { z-index: 1000; opacity: 1; animation-delay: 0s; }
-  .air2 { z-index: 999; opacity: 0.5; animation-delay: -5s; bottom: 10px; }
-  .air3 { z-index: 998; opacity: 0.2; animation-delay: -2s; bottom: 15px; }
-  .air4 { z-index: 997; opacity: 0.7; animation-delay: -5s; bottom: 20px; }
-  
-  @keyframes wave {
-    0% { background-position-x: 0; }
-    100% { background-position-x: -1000px; }
-  }
-  
+/* listbutton js css */
+
+
+
+/* listbutton js css */
 
 /* end intro section */
+
+.aside{
+    background-color: var(--secundary-clr-brown);
+    padding: 2em;
+    width: 300px;
+}
+h2{
+    color: var(--primary-clr-white);
+}
+
+#listContainer{
+    list-style: none;
+}
+#listContainer li {
+    /* Voeg hier stijlen toe voor elk lijstitem in de lijstcontainer */
+    margin: 5px 0; /* Voorbeeld: marge boven en onder elk lijstitem */
+    padding: 10px; /* Voorbeeld: opvulling binnen elk lijstitem */
+    background-color: #f0f0f0; /* Voorbeeld: achtergrondkleur van elk lijstitem */
+    border-radius: 5px; /* Voorbeeld: afronding van de hoeken van elk lijstitem */
+}
+
+#listContainer li:hover {
+    /* Voeg hier stijlen toe voor elk lijstitem wanneer de muis erover zweeft */
+    background-color: #dcdcdc; /* Voorbeeld: achtergrondkleur veranderen bij zweven */
+}
+
+/* main */
+
+  
